@@ -1,0 +1,121 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8e8e8; /* Notion-like background color */
+  color: #333;
+  font-size: 18px; /* Increase base font size */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Notion-like text color */
+}
+
+.input-section,
+.tasks-list,
+.footer {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.task-input,
+.add-task-btn,
+.sort-task-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Increase input and button font size */
+}
+
+.add-task-btn,
+.sort-task-btn {
+  cursor: pointer;
+  background-color: #333; /* Notion-like button color */
+  color: #fff;
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.task-checkbox:checked + .task-label {
+  text-decoration: line-through; /* Strike out completed tasks */
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.footer {
+  text-align: center;
+  color: #333; /* Notion-like text color */
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%; /* Make the checkbox round */
+}
+
+.task-label {
+  font-size: 20px; /* Increase label font size */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px; /* Increase button font size */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for a smooth color change */
+}
+
+button:hover {
+  background-color: #555; /* Change button color on hover */
+}
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
